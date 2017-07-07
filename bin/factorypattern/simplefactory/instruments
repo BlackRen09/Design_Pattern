@@ -1,0 +1,12 @@
+简单工厂模式:
+	针对于同一个接口(或抽象类)的多个实现类(子类)，这些实现类不再在客户端显式使用new方式创建对象
+	而是通过工厂类的静态方法获取，一个工厂类可以生成该接口的所有实现，所以又叫做静态工厂方法模式。
+包内的类的说明:
+	接口——Shape，具有多个具体实现
+	Circle——Shape实现类
+	Rectangle——Shape实现类
+	Square——Shape实现类
+	
+	ShapeFactory:工厂类，根据一些条件来判断生成Shape的哪一个实现类，这些条件可以自己选定
+	
+	FactoryPatternDemo:客户端，客户端不需要使用new显式生成Shape实现类，只需要调用ShapeFactory的静态方法即可
